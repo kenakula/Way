@@ -24,3 +24,8 @@
   display: $display;
   position: $pos;
 }
+
+@mixin full-width {
+  margin-left: calc(((100vw / 2) - (50% / 2)) * -1);
+  margin-right: calc(((100vw / 2) - (50% / 2)) * -1);
+}

@@ -1,0 +1,21 @@
+.button {
+  @include button-reset;
+
+  display: block;
+  padding: 30px 20px 30px;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  background-color: $orange;
+  color: $white;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: $desktop) {
+  .button {
+    padding: 19px 20px 19px;
+  }
+}

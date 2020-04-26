@@ -1,0 +1,194 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 28px;
+  width: 372px;
+  min-height: 675px;
+  border: 3px solid rgba($color: $black-alt, $alpha: 0.3);
+  border-radius: 6px;
+
+  &--complex {
+    border-color: $orange;
+
+    .card__inner {
+      border-color: rgba($color: $orange, $alpha: 0.5);
+    }
+
+    .card__title,
+    .card__price {
+      color: $orange;
+    }
+
+    .card__check {
+      fill: currentColor;
+      color: $orange;
+    }
+  }
+}
+.card__wrapper {
+  padding-top: 39px;
+}
+
+.card__header {
+  padding: 0 31px;
+}
+
+.card__inner {
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 28px;
+  border-bottom: 1px solid rgba($color: $black-alt, $alpha: 0.3);
+}
+
+.card__title {
+  margin: 0;
+  margin-bottom: 40px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 34px;
+  letter-spacing: -2px;
+}
+
+.card__price {
+  margin: 0;
+  margin-left: auto;
+  font-weight: bold;
+  font-size: 25px;
+  line-height: 34px;
+}
+
+.card__promo {
+  margin: 0;
+  padding-right: 20px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: $black-alt;
+}
+
+.card__list {
+  @include list-reset;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 30px 30px 0;
+  min-height: 321px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 32px;
+}
+
+.card__item {
+  position: relative;
+  padding-left: 29px;
+  padding-right: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.card--simple {
+  .card__list {
+    min-height: 345px;
+  }
+}
+// TODO оранжевые галочки
+
+.card__check {
+  position: absolute;
+  left: 0;
+  margin-top: 5px;
+  width: 22px;
+  height: 22px;
+}
+
+.card__button {
+  margin: 0 auto;
+  margin-top: auto;
+  width: 310px;
+  text-decoration: none;
+}
+
+@media screen and (max-width: $desktop) {
+  .card {
+    margin-bottom: 30px;
+    padding-bottom: 0;
+    width: 291px;
+    min-height: auto;
+    border: none;
+
+    &--complex {
+      .card__wrapper {
+        border: 3px solid $orange;
+        border-bottom: none;
+      }
+
+      .card__item {
+        margin-bottom: 8px;
+      }
+    }
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .card__wrapper {
+    padding-top: 31px;
+    min-height: 579px;
+    border: 1px solid rgba($color: $black-alt, $alpha: 0.3);
+    border-bottom: none;
+    box-sizing: border-box;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+
+  .card__header {
+    padding: 0 18px;
+  }
+
+  .card__inner {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 8px;
+  }
+
+  .card__title {
+    margin-bottom: 7px;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: -1.5px;
+  }
+
+  .card__price {
+    margin: 0;
+    margin-bottom: 12px;
+  }
+
+  .card__promo {
+    padding: 0;
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .card__list {
+    padding: 20px 20px 0;
+  }
+
+  .card__item {
+    padding-left: 30px;
+    padding-right: 0px;
+    margin-bottom: 11px;
+  }
+
+  .card__button {
+    margin: 0;
+    padding: 20px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+}

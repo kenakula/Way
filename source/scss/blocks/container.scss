@@ -1,0 +1,25 @@
+.container {
+  @include push--auto;
+
+  width: 61%;
+}
+
+.outline {
+  border: 1px solid red;
+
+  &--blue {
+    border: 1px solid blue;
+  }
+}
+
+@media screen and (max-width: $desktop) {
+  .container {
+    width: 94.53125%;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .container {
+    width: 90%;
+  }
+}

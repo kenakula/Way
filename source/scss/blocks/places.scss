@@ -1,0 +1,164 @@
+.places {
+  padding-top: 199px;
+  color: $black-alt;
+}
+
+.places__title {
+  position: relative;
+  margin: 0 0 64px;
+  width: 400px;
+  font-size: 55px;
+  line-height: 80px;
+  letter-spacing: -2.5px;
+
+  &::before {
+    @include pseudo;
+
+    bottom: -32px;
+    left: 0;
+    width: 57.5%;
+    height: 4px;
+    background-color: $orange;
+  }
+}
+
+.places__text {
+  margin: 0;
+  margin-bottom: 56px;
+  width: 330px;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.2px;
+}
+
+.places__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.places__item {
+  position: relative;
+  display: flex;
+  flex-shrink: 0;
+  margin-left: 59px;
+  margin-bottom: 101px;
+
+  &:nth-child(3n+1) {
+    margin-left: 0;
+  }
+
+  &:last-child {
+    margin-left: 119px;
+  }
+}
+
+.places__img {
+  object-fit: cover;
+}
+
+.places__label {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  display: block;
+  background-color: $white;
+  margin-left: -107.5px;
+  padding: 17px 15px;
+  width: 215px;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 29px;
+  text-align: center;
+  letter-spacing: -0.415px;
+}
+
+.places__hover {
+  position: absolute;
+  display: none;
+}
+
+@media screen and (max-width: $desktop) {
+  .places {
+    padding-top: 83px;
+    padding-bottom: 80px;
+
+    .container {
+      width: 79%;
+    }
+  }
+
+  .places__title {
+    margin-bottom: 20px;
+    width: 100%;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    letter-spacing: -0.5px;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .places__text {
+    margin: 0 auto 40px;
+    text-align: center;
+  }
+
+  .places__list {
+    justify-content: space-between;
+  }
+
+  .places__item {
+    margin: 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+
+  .places__img {
+    width: 288px;
+    height: 425px;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+  .places {
+    padding-top: 70px;
+    padding-bottom: 24px;
+
+    .container {
+      width: 90%;
+    }
+  }
+
+  .places__title {
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .places__text {
+    margin-bottom: 19px;
+    width: 100%;
+  }
+
+  .places__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .places__item {
+    margin-bottom: 35px;
+
+    &:last-child {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+  }
+}

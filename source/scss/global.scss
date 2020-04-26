@@ -27,14 +27,17 @@ body {
   position: relative;
   margin: 0;
   padding: 0;
+  min-width: 320px;
   font-family: $font-main;
   font-size: 14px;
-  line-height: 18px;
+  line-height: 17px;
   font-weight: 400;
+  color: $black;
   background-color: #ffffff;
   overflow-x: hidden;
 }
 
 img {
+  display: block;
   max-width: 100%;
 }

@@ -1,0 +1,133 @@
+.directions {
+  margin-top: -20px;
+  padding-bottom: 120px;
+}
+
+// TODO задать фон картой
+
+.directions__content {
+  padding-top: 84px;
+}
+
+.directions__list {
+  @include list-reset;
+}
+
+.directions__item {
+  position: relative;
+  display: none;
+
+  &--show {
+    display: flex;
+  }
+}
+
+.directions__description {
+  width: 36.45%;
+  margin-right: 44px;
+}
+
+.directions__title {
+  margin: 0;
+  margin-bottom: 53px;
+  font-size: 55px;
+  font-weight: 600;
+  line-height: 90px;
+  letter-spacing: -4.245px;
+  color: $black-alt;
+}
+
+.directions__text {
+  margin: 0;
+  margin-bottom: 49px;
+  padding-right: 55px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  letter-spacing: -0.1px;
+  color: rgba($color: $black-alt, $alpha: 0.7)
+}
+
+.directions__button {
+  width: 250px;
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.directions__feedback {
+  margin-top: -5px;
+}
+
+@media screen and (max-width: $desktop) {
+  .directions {
+    margin-top: 0;
+    padding-bottom: 20px;
+  }
+
+  .directions__content {
+    padding-top: 32px;
+  }
+
+  .directions__title {
+    margin-bottom: 20px;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: -1px;
+    text-align: center;
+  }
+
+  .directions__item {
+    flex-direction: column;
+  }
+
+  .directions__description {
+    margin-right: 0;
+    margin-bottom: 30px;
+    width: auto;
+  }
+
+  .directions__text {
+    margin-bottom: 20px;
+    padding: 0;
+    text-align: center;
+    letter-spacing: -0.3px;
+  }
+
+  .directions__button {
+    margin: 0 auto;
+    font-weight: 500;
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  .directions__feedback {
+    @include full-width;
+
+    margin-top: 0;
+  }
+}
+
+@media screen and (max-width: $tablet) {
+
+  .directions__content {
+    padding-top: 23px;
+  }
+
+  .directions__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+  }
+
+  .directions__text {
+    padding: 0 2px;
+  }
+
+  .directions__button {
+    width: 288px;
+  }
+}
+
