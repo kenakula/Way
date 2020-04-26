@@ -1,0 +1,34 @@
+.contacts__list {
+  @include list-reset;
+
+  padding-top: 3px;
+}
+
+.contacts__item {
+  position: relative;
+  margin-bottom: 19px;
+  padding-left: 40px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.contacts__link {
+  color: $orange;
+
+  &--tel {
+    font-size: 16px;
+    line-height: 32px;
+  }
+}
+
+.contacts__icon {
+  position: absolute;
+  left: 1px;
+  top: -1px;
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: #D7D9DF;
+}

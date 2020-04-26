@@ -1,6 +1,6 @@
 .prices {
   padding-top: 119px;
-  padding-bottom: 120px;
+  padding-bottom: 100px;
 
   .container {
     display: flex;
@@ -84,12 +84,14 @@
   position: absolute;
   top: 0;
   left: -43px;
-  fill: transparent;
+  fill: none;
+  stroke: $orange;
 }
 
 @media screen and (max-width: $desktop) {
   .prices {
     padding-top: 90px;
+    padding-bottom: 58px;
 
     .container {
       flex-direction: column;
