@@ -16,6 +16,7 @@
 
 .contacts__link {
   color: $orange;
+  word-break: break-word;
 
   &--tel {
     font-size: 16px;

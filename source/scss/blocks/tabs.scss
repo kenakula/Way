@@ -1,20 +1,15 @@
-.tabs {
-  margin: 0 auto;
-  width: 61%;
-}
-
 .tabs__list {
   @include list-reset;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   width: 77%;
   border-bottom: 1px solid rgba(44, 46, 63, 0.3);;
 }
 
 .tabs__item {
   padding: 15px 0;
-  margin-right: 105px;
+  margin-right: 11.4641%;
 
   &:last-child {
     margin-right: 0;

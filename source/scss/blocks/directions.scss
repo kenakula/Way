@@ -1,5 +1,6 @@
 .directions {
   margin-top: -20px;
+  padding-top: 51px;
   padding-bottom: 120px;
 }
 
@@ -16,6 +17,8 @@
 .directions__item {
   position: relative;
   display: none;
+  flex-wrap: wrap;
+  justify-content: center;
 
   &--show {
     display: flex;
@@ -24,7 +27,9 @@
 
 .directions__description {
   width: 36.45%;
-  margin-right: 44px;
+  margin-right: 3.7577%;
+  min-width: 350px;
+  margin-bottom: 17px;
 }
 
 .directions__title {
@@ -40,11 +45,11 @@
 .directions__text {
   margin: 0;
   margin-bottom: 49px;
-  padding-right: 55px;
+  padding-right: 56px;
   font-weight: normal;
   font-size: 16px;
   line-height: 28px;
-  letter-spacing: -0.1px;
+  letter-spacing: -0.2px;
   color: rgba($color: $black-alt, $alpha: 0.7)
 }
 

@@ -1,23 +1,22 @@
 .promo {
   display: flex;
   padding: 180px 100px 297px;
-  background-color: #97b4de;
-  // TODO исправить пути url
-  background-image: url("../../img/promo-desktop@1x.jpg");
+  background-color: $promo-bg;
+  background-image: url("../img/promo-desktop@1x.jpg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
   color: $white;
 
   @media (min-resolution: $retina) {
-    background-image: url("../../img/promo-desktop@2x.jpg");
+    background-image: url("../img/promo-desktop@2x.jpg");
   }
 }
 
 .promo__inner {
   margin-left: auto;
-  margin-right: 326px;
-  width: 420px;
+  margin-right: 18.9%;
+  width: 24.4186%;
 }
 
 .promo__title {
@@ -51,7 +50,7 @@
     right: 40px;
     width: 14px;
     height: 14px;
-    background-image: url("../../img/arrow-down.svg");
+    background-image: url("../img/arrow-down.svg");
     background-repeat: no-repeat;
     background-position: center center;
   }
@@ -61,10 +60,10 @@
   .promo {
     padding: 60px;
     min-height: 344px;
-    background-image: url("../../img/promo-tablet@1x.jpg");
+    background-image: url("../img/promo-tablet@1x.jpg");
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/promo-tablet@2x.jpg");
+      background-image: url("../img/promo-tablet@2x.jpg");
     }
   }
 
@@ -119,7 +118,7 @@
     margin-bottom: 20px;
     padding: 20px;
     min-height: 235px;
-    background-image: url("../../img/promo-mobile@1x.jpg");
+    background-image: url("../img/promo-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
@@ -128,7 +127,7 @@
     color: $white;
 
     @media (min-resolution: $retina) {
-      background-image: url("../../img/promo-mobile@2x.jpg");
+      background-image: url("../img/promo-mobile@2x.jpg");
     }
   }
 

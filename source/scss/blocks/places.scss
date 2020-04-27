@@ -1,20 +1,21 @@
 .places {
   padding-top: 199px;
+  padding-bottom: 50px;
   color: $black-alt;
 }
 
 .places__title {
   position: relative;
   margin: 0 0 64px;
-  width: 400px;
+  width: 34.1588%;
   font-size: 55px;
   line-height: 80px;
-  letter-spacing: -2.5px;
+  letter-spacing: -3.2px;
 
   &::before {
     @include pseudo;
 
-    bottom: -32px;
+    bottom: -33px;
     left: 0;
     width: 57.5%;
     height: 4px;
@@ -24,8 +25,8 @@
 
 .places__text {
   margin: 0;
-  margin-bottom: 56px;
-  width: 330px;
+  margin-bottom: 55px;
+  width: 28.18104%;
   font-size: 16px;
   line-height: 28px;
   letter-spacing: -0.2px;
@@ -42,37 +43,47 @@
 .places__item {
   position: relative;
   display: flex;
-  flex-shrink: 0;
-  margin-left: 59px;
+  margin-left: 5.12382%;
   margin-bottom: 101px;
+  width: 29.88898%;
 
-  &:nth-child(3n+1) {
+  &:first-child {
     margin-left: 0;
   }
 
-  &:last-child {
-    margin-left: 119px;
+  &:nth-child(3n + 1):not(:first-child) {
+    margin-left: 0;
+    margin-bottom: 0;
   }
+
+  &:last-child {
+    margin-left: 10.333%;
+    margin-bottom: 0;
+  }
+
+  // предполагаю, что данный блок лишь для ознакомления с основными позициями, и в дальнейшем количество элементов в контейнере не меняется, ибо другим образом как выполненным выше, сетку на флексбоксах сделать не получается. При наполнении элементами сетка рушится. При использовании разных контейнеров-рядов для элементов, также ряд с двумя карточками придется либо менять в размерах, либо выравнивать с помощью margin'ов, что также не позволяет добавить элементов не нарушая сетку.
 }
 
 .places__img {
-  object-fit: cover;
+  width: 100%;
+  height: auto;
 }
 
 .places__label {
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
   left: 50%;
   display: block;
   background-color: $white;
-  margin-left: -107.5px;
+  margin-left: -30.71428%;
   padding: 17px 15px;
-  width: 215px;
+  width: 61.4285%;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 1.25vw;
   line-height: 29px;
   text-align: center;
   letter-spacing: -0.415px;
+  color: $black-alt;
 }
 
 .places__hover {

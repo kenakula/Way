@@ -1,5 +1,6 @@
 .feedback {
   position: relative;
+  display: flex;
   flex-grow: 1;
 }
 
@@ -8,7 +9,7 @@
   top: 114px;
   left: 318px;
   padding: 30px;
-  max-width: 380px;
+  width: 380px;
   background-color: $white;
   color: $black-alt;
 }
@@ -35,11 +36,10 @@
 .feedback__text {
   margin: 0;
   margin-bottom: 29px;
-  padding-right: 10px;
   font-weight: 400;
   font-size: 14px;
   line-height: 28px;
-  letter-spacing: -0.408333px;
+  letter-spacing: -0.1px;
   color: rgba($color: $black-alt, $alpha: 0.7)
 }
 
@@ -52,8 +52,12 @@
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
-  letter-spacing: -0.466667px;
+  letter-spacing: -0.7px;
   color: $black-alt;
+}
+
+.feedback__name {
+  padding-top: 5px;
 }
 
 .feedback__avatar {

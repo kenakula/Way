@@ -1,17 +1,17 @@
 .prices {
   padding-top: 119px;
-  padding-bottom: 100px;
+  padding-bottom: 80px;
 
   .container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
 
 .prices__inner {
   padding-top: 110px;
-  padding-left: 12px;
-  width: 25.641%;
+  width: 288px;
 }
 
 .prices__list {
@@ -19,10 +19,12 @@
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .prices__item {
   margin-right: 30px;
+  margin-bottom: 20px;
 
   &:last-child {
     margin-right: 0;
