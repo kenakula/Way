@@ -7,7 +7,7 @@
   width: 100%;
   background-color: rgba($color: $black, $alpha: 0.5);
   backdrop-filter: blur(3px);
-  z-index: 100;
+  z-index: 500;
 
   &--show {
     display: block;
@@ -43,6 +43,7 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  cursor: pointer;
 }
 
 .modal__form {
@@ -148,7 +149,11 @@
   }
 
   .modal__form {
-    padding: 90px 15px 20px;
+    padding: 99px 15px 20px;
+  }
+
+  .modal__title {
+    margin-bottom: 51px;
   }
 
   .modal__submit {

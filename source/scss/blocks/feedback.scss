@@ -87,9 +87,10 @@
 
 @media (max-width: $tablet) {
   .feedback__feed {
+    top: 60px;
     max-width: 268px;
     margin-left: -134px;
-    padding: 21px 24px;
+    padding: 21px 20px;
   }
 
   .feedback__title {
@@ -111,7 +112,7 @@
   }
 
   .feedback__img {
-    object-fit: contain;
+    object-fit: cover;
   }
 
   .feedback__author {
@@ -120,6 +121,6 @@
 
   .feedback__avatar {
     margin-right: 0;
-    margin-bottom: 12px;
+    margin-bottom: 6px;
   }
 }

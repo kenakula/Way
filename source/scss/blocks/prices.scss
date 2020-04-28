@@ -156,9 +156,29 @@
 }
 
 @media (max-width: $tablet) {
+  .prices {
+    padding-top: 71px;
+  }
+
+  .prices__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .prices__inner {
+    margin: 0 auto;
+    margin-bottom: 36px;
+    max-width: 450px;
+  }
+
   .prices__title {
     font-size: 24px;
     line-height: 36px;
+  }
+
+  .prices__text {
+    margin-bottom: 17px;
+    padding: 0;
   }
 
   .prices__item {

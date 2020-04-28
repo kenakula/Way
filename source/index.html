@@ -18,7 +18,7 @@
     <include src="build/img/sprite.svg"></include>
   </div>
 
-  <header class="page-header">
+  <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
       <a class="page-header__logo">
         <img class="page-header__logo-img" src="img/page-logo.svg" width="57" height="22" alt="логотип компании">
@@ -55,7 +55,9 @@
 
     <section class="promo">
       <div class="promo__inner">
-        <h1 class="promo__title"><span>Путешествие по Европе</span></h1>
+        <div class="promo__wrapper">
+          <h1 class="promo__title">Путешествие по Европе</h1>
+        </div>
         <p class="promo__text">
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
           природы.
@@ -242,7 +244,7 @@
                   достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
                   монастырях Метеоры.
                 </p>
-                <a href="#" class="directions__button button">Купить тур сейчас</a>
+                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -295,7 +297,7 @@
                   песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
                   состояния.
                 </p>
-                <a href="#" class="directions__button button">Купить тур сейчас</a>
+                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -347,7 +349,7 @@
                   местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
                   Камен где находится археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a href="#" class="directions__button button">Купить тур сейчас</a>
+                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -399,7 +401,7 @@
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
                   берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a href="#" class="directions__button button">Купить тур сейчас</a>
+                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -450,7 +452,7 @@
                   метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
                   сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
                 </p>
-                <a href="#" class="directions__button button">Купить тур сейчас</a>
+                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -545,7 +547,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="card__button button">Купить тур сейчас</a>
+            <a href="#" class="card__button button button--buy">Купить тур сейчас</a>
           </li>
 
           <li class="prices__item card card--simple">
@@ -596,7 +598,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="card__button button">Купить тур сейчас</a>
+            <a href="#" class="card__button button button--buy">Купить тур сейчас</a>
           </li>
         </ul>
 
@@ -677,14 +679,15 @@
       </section>
 
       <section class="page-footer__section page-footer__section--contacts contacts">
-        <h2 class="page-footer__title">Наши контакты</h2>
+        <h2 class="page-footer__title page-footer__title--contacts">Наши контакты</h2>
         <ul class="contacts__list">
           <li class="contacts__item">
             <a href="mailto: puteshestviemechta@gmail.ru" class="contacts__link">
               <svg class="contacts__icon">
                 <use xlink:href="#icon-envelope" width="30" height="30"></use>
               </svg>
-              puteshestviemechta@gmail.ru
+              <span class="contacts__mail contacts__mail--link">puteshestviemechta@gmail.ru</span>
+              <span class="contacts__mail contacts__mail--label">Почта</span>
             </a>
           </li>
           <li class="contacts__item">
@@ -712,7 +715,7 @@
 
   <!-- MODAL FORM -->
 
-  <div class="modal">
+  <div class="modal modal--buy">
     <div class="modal__inner">
       <button class="modal__close"></button>
       <div class="modal__img-wrapper">
@@ -746,6 +749,9 @@
       <h2 class="modal__title modal__title--success">Форма успешно отправлена, спасибо! :)</h2>
     </div>
   </div>
+
+  <script src="js/menu.min.js"></script>
+  <script src="js/buy.min.js"></script>
 </body>
 
 </html>

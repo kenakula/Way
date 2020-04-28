@@ -43,12 +43,13 @@
 }
 
 @media (max-width: $tablet) {
-  .callback__inner {
-    margin: 0 auto;
-    width: 90%;
+  .callback {
+    padding-top: 41px;
   }
 
   .callback__inner {
+    margin: 0 auto;
+    width: 90%;
     min-height: auto;
     background-image: none;
     background-color: $white;

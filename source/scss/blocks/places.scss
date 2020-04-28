@@ -154,11 +154,16 @@
 @media (max-width: $tablet) {
   .places {
     padding-top: 70px;
-    padding-bottom: 24px;
+    padding-bottom: 14px;
 
     .container {
       width: 90%;
     }
+  }
+
+  .places__inner {
+    margin: 0 auto;
+    max-width: 450px;
   }
 
   .places__title {
@@ -177,11 +182,16 @@
   }
 
   .places__item {
+    margin: 0;
     margin-bottom: 35px;
+    width: 100%;
+
+    &:nth-child(3n + 1):not(:first-child) {
+      margin-bottom: 35px;
+    }
 
     &:last-child {
       margin-top: 0;
-      margin-bottom: 0;
     }
   }
 }

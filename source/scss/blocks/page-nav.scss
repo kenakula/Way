@@ -37,15 +37,27 @@
 @media (max-width: $desktop) {
   .page-nav {
     display: none;
+    flex-grow: 1;
+    margin: 0;
     padding-top: 98px;
     padding-bottom: 50px;
+    width: 100%;
+    background-color: $white;
 
     &--opened {
+      position: absolute;
+      top: 0;
+      left: 0;
       display: block;
-      width: 100%;
-      flex-grow: 1;
-      margin: 0;
+      min-height: 518px;
+      z-index: 100;
     }
+  }
+
+  .page-nav__list {
+    margin: 0 auto;
+    max-width: none;
+    width: 90%;
   }
 
   .page-nav--opened > .page-nav__list {

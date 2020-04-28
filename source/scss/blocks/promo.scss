@@ -111,7 +111,7 @@
     color: $black;
   }
 
-  .promo__title {
+  .promo__wrapper {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,16 +122,21 @@
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
-    font-size: 24px;
-    line-height: 36px;
-    color: $white;
 
     @media (min-resolution: $retina) {
       background-image: url("../img/promo-mobile@2x.jpg");
     }
   }
 
+  .promo__title {
+    margin: 0;
+    font-size: 24px;
+    line-height: 36px;
+    color: $white;
+  }
+
   .promo__text {
+    max-width: 450px;
     width: 87.5%;
     margin-bottom: 20px;
     color: $black-alt;
@@ -139,5 +144,6 @@
 
   .promo__button {
     width: 288px;
+    letter-spacing: 2.5px;
   }
 }

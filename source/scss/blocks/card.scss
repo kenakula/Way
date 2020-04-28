@@ -118,7 +118,7 @@
     width: 291px;
     min-height: auto;
     border: none;
-
+    // TODO наведение
     &--complex {
       .card__wrapper {
         border: 3px solid $orange;
@@ -190,5 +190,21 @@
     font-weight: 500;
     font-size: 10px;
     line-height: 12px;
+  }
+}
+
+@media (max-width: $tablet) {
+  .card__wrapper {
+    min-height: 565px;
+  }
+
+  .card--simple {
+    .card__list {
+      min-height: 347px;
+    }
+
+    .card__wrapper {
+      min-height: 576px;
+    }
   }
 }
