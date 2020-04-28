@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .promo {
     padding: 60px;
     min-height: 344px;
@@ -102,7 +102,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .promo {
     padding: 0;
     padding-bottom: 40px;

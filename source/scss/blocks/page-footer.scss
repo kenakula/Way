@@ -67,7 +67,7 @@
   color: rgba($color: $black, $alpha: 0.5)
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .page-footer {
     padding-top: 51px;
   }
@@ -76,7 +76,7 @@
     padding: 0;
 
     &--coming {
-      width: 396px;
+      width: 53.8043%;
       margin-bottom: 20px;
     }
 
@@ -87,7 +87,8 @@
     }
 
     &--group-trips {
-      padding-top: 29px;
+      padding-top: 26px;
+      width: 100%;
       border-top: 1px solid #D7D9DF;
 
       .page-footer__title {
@@ -96,8 +97,8 @@
     }
   }
 
-  .page-footer__item {
-    width: 31.33%;
+  .page-footer__list {
+    width: 32.333%;
   }
 
   .page-footer__text {

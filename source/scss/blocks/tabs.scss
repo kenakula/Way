@@ -30,7 +30,7 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .tabs {
     padding-left: 4.8%;
     width: 100%;
@@ -40,9 +40,13 @@
     width: auto;
     flex-wrap: nowrap;
   }
+
+  .tabs__item {
+    margin-right: 14.4641%;
+  }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .tabs {
     padding-left: 4.687%;
   }

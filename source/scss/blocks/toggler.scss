@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .toggler {
     @include button-reset;
 
@@ -23,7 +23,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) and (min-width: $mobile) {
+@media (max-width: $tablet) and (min-width: $mobile) {
   .toggler {
     width: 50px;
     margin-right: calc(((100vw - (100vw * 0.9)) / 2) *-1 );

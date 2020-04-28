@@ -42,7 +42,7 @@
   fill: none;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .page-header {
     min-height: 50px;
   }

@@ -12,13 +12,13 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .container {
     width: 94.53125%;
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .container {
     width: 90%;
   }

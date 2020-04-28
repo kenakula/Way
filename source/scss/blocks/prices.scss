@@ -90,7 +90,7 @@
   stroke: $orange;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .prices {
     padding-top: 90px;
     padding-bottom: 58px;
@@ -131,6 +131,7 @@
   .prices__text {
     margin-bottom: 33px;
     padding: 0 10px;
+    letter-spacing: 0.3px;
     text-align: center;
   }
 
@@ -154,7 +155,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .prices__title {
     font-size: 24px;
     line-height: 36px;

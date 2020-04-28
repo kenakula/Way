@@ -14,7 +14,7 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .button {
     padding: 19px 20px 19px;
   }

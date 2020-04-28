@@ -111,7 +111,7 @@
   text-decoration: none;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .card {
     margin-bottom: 30px;
     padding-bottom: 0;
@@ -174,13 +174,13 @@
   }
 
   .card__list {
-    padding: 20px 20px 0;
+    padding: 24px 20px 0;
   }
 
   .card__item {
     padding-left: 30px;
     padding-right: 0px;
-    margin-bottom: 11px;
+    margin-bottom: 8px;
   }
 
   .card__button {

@@ -91,13 +91,13 @@
   display: none;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .places {
-    padding-top: 83px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 32px;
 
     .container {
-      width: 79%;
+      width: 78.8%;
     }
   }
 
@@ -117,29 +117,41 @@
   .places__text {
     margin: 0 auto 40px;
     text-align: center;
-  }
-
-  .places__list {
-    justify-content: space-between;
+    width: 56.865%;
   }
 
   .places__item {
     margin: 0;
     margin-bottom: 20px;
+    margin-right: 29px;
+    width: 47.5899%;
+
+    &:nth-child(2n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3n + 1):not(:first-child) {
+      margin-bottom: 20px;
+    }
 
     &:last-child {
-      margin: 0 auto;
+      margin: 0;
       margin-top: 10px;
     }
   }
 
-  .places__img {
-    width: 288px;
-    height: 425px;
+  .places__link {
+    width: 100%;
+  }
+
+  .places__label {
+    margin-left: -37.3263%;
+    width: 74.6527%;
+    font-size: 24px;
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .places {
     padding-top: 70px;
     padding-bottom: 24px;

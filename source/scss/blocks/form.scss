@@ -85,7 +85,7 @@
   width: 176px;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .form {
     margin: 0;
   }
@@ -99,7 +99,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .form {
     padding: 0;
     width: auto;

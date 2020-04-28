@@ -119,7 +119,7 @@
   width: 176px;
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .modal__img-wrapper {
     display: none;
   }
@@ -141,7 +141,7 @@
   }
 }
 
-@media screen and (max-width: $tablet) {
+@media (max-width: $tablet) {
   .modal__inner {
     width: 100%;
     min-height: 568px;

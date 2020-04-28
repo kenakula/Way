@@ -34,7 +34,7 @@
   }
 }
 
-@media screen and (max-width: $desktop) {
+@media (max-width: $desktop) {
   .page-nav {
     display: none;
     padding-top: 98px;
