@@ -87,7 +87,7 @@ gulp.task('css', function () {
 
 gulp.task('uglify', function () {
   return gulp.src('source/**/*.js')
-    .pipe(uglify())
+    // .pipe(uglify())
     .pipe(rename({ suffix: '.min' }))
     .pipe(gulp.dest('build'));
 });

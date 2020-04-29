@@ -4,7 +4,7 @@
   display: flex;
   flex-wrap: nowrap;
   width: 77%;
-  border-bottom: 1px solid rgba(44, 46, 63, 0.3);;
+  border-bottom: 1px solid rgba($color: $black-alt, $alpha: 0.3);
 }
 
 .tabs__item {
@@ -28,17 +28,27 @@
   &--active {
     color: $orange;
   }
+
+  &:not(.tabs__link--active):hover {
+    color: rgba($color: $black-alt, $alpha: 0.7)
+  }
+
+  &:not(.tabs__link--active):active {
+    color: rgba($color: $black-alt, $alpha: 1)
+  }
 }
 
 @media (max-width: $desktop) {
   .tabs {
-    padding-left: 4.8%;
-    width: 100%;
+    position: relative;
+    margin-left: 4.8%;
+    width: auto;
   }
 
   .tabs__list {
-    width: auto;
+    position: relative;
     flex-wrap: nowrap;
+    width: 100%;
   }
 
   .tabs__item {

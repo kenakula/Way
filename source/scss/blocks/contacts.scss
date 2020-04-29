@@ -15,12 +15,22 @@
 }
 
 .contacts__link {
+  @include transition;
+
   color: $orange;
   word-break: break-word;
 
   &--tel {
     font-size: 16px;
     line-height: 32px;
+  }
+
+  &:hover {
+    color: $orange-hover;
+  }
+
+  &:active {
+    opacity: 0.7;
   }
 }
 
@@ -35,7 +45,7 @@
   width: 30px;
   height: 30px;
   fill: none;
-  stroke: #D7D9DF;
+  stroke: $footer-border-color;
 }
 
 @media (max-width: $tablet) {

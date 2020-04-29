@@ -27,10 +27,10 @@
       <nav class="page-nav">
         <ul class="page-nav__list">
           <li class="page-nav__item">
-            <a href="#" class="page-nav__link">О путешествии</a>
+            <a href="#places" class="page-nav__link">О путешествии</a>
           </li>
           <li class="page-nav__item">
-            <a href="#" class="page-nav__link">Цены</a>
+            <a href="#prices" class="page-nav__link">Цены</a>
           </li>
         </ul>
       </nav>
@@ -62,15 +62,15 @@
           В этом туре вы откроете для себя Европу в новом свете. Вас ждет: море, горы, а также потрясающая красота
           природы.
         </p>
-        <button class="button promo__button" type="button">
+        <a class="button promo__button" href="#directions">
           Смотреть тур
-        </button>
+        </a>
       </div>
     </section>
 
     <!-- PLACES -->
 
-    <section class="places">
+    <section class="places" id="places">
       <div class="container">
         <div class="places__inner">
           <h2 class="places__title">Места посещения</h2>
@@ -97,7 +97,7 @@
               </div>
               <span class="places__label">Греция</span>
               <div class="places__hover">
-                <span class="places__button">Смотреть подробнне</span>
+                <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -121,7 +121,7 @@
               </div>
               <span class="places__label">Албания</span>
               <div class="places__hover">
-                <span class="places__button">Смотреть подробнне</span>
+                <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -145,7 +145,7 @@
               </div>
               <span class="places__label">Македония</span>
               <div class="places__hover">
-                <span class="places__button">Смотреть подробнне</span>
+                <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -169,7 +169,7 @@
               </div>
               <span class="places__label">Черногория</span>
               <div class="places__hover">
-                <span class="places__button">Смотреть подробнне</span>
+                <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -193,7 +193,7 @@
               </div>
               <span class="places__label">Хорватия</span>
               <div class="places__hover">
-                <span class="places__button">Смотреть подробнне</span>
+                <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
@@ -201,31 +201,31 @@
       </div>
     </section>
 
-    <!-- TABS -->
+    <!-- DIRECTIONS -->
 
-    <section class="directions">
+    <section class="directions" id="directions">
       <h2 class="visually-hidden">Описание направлений туров</h2>
 
       <div class="directions__tabs container tabs">
-        <ul class="tabs__list">
+        <ul class="tabs__list" draggable="true">
           <li class="tabs__item">
-            <a href="#" class="tabs__link tabs__link--active">Греция</a>
+            <a href="#" class="tabs__link tabs__link--active" data-tab="0">Греция</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link">Албания</a>
+            <a href="#" class="tabs__link" data-tab="1">Албания</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link">Македония</a>
+            <a href="#" class="tabs__link" data-tab="2">Македония</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link">Черногория</a>
+            <a href="#" class="tabs__link" data-tab="3">Черногория</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link">Хорватия</a>
+            <a href="#" class="tabs__link" data-tab="4">Хорватия</a>
           </li>
         </ul>
       </div>
@@ -503,8 +503,8 @@
 
     <!-- PRICES -->
 
-    <section class="prices">
-      <div class="container">
+    <section class="prices" id="prices">
+      <div class="prices__container container">
         <ul class="prices__list">
           <li class="prices__item card">
             <div class="card__wrapper">
@@ -633,11 +633,13 @@
             <p class="form__text">Оставьте свой номер или e-mail и мы свяжемся с Вами</p>
             <div class="form__inner">
               <div class="form__wrapper form__wrapper--required">
-                <input class="form__input form__input--tel" type="tel" placeholder="+7   Введите 10 цифр номера"
-                  required>
+                <span class="form__error">Данные не верны</span>
+                <input class="form__input form__input--tel" name="tel" id="tel" type="tel"
+                  placeholder="+7   Введите 10 цифр номера" required>
               </div>
               <div class="form__wrapper">
-                <input class="form__input" type="email" placeholder="E-mail">
+                <span class="form__error">Данные не верны</span>
+                <input class="form__input" name="email" id="email" type="email" placeholder="E-mail">
               </div>
             </div>
             <button class="button form__button" type="submit">Отправить</button>
@@ -650,7 +652,7 @@
   <!-- FOOTER -->
 
   <footer class="page-footer">
-    <div class="container">
+    <div class="page-footer__container container">
       <section class="page-footer__section page-footer__section--coming">
         <h2 class="page-footer__title">Следующие путешествия</h2>
         <div class="page-footer__wrapper">
@@ -752,6 +754,9 @@
 
   <script src="js/menu.min.js"></script>
   <script src="js/buy.min.js"></script>
+  <script src="js/form.min.js"></script>
+  <script src="js/tabs-drag.min.js"></script>
+  <script src="js/tabs.min.js"></script>
 </body>
 
 </html>

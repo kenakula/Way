@@ -25,6 +25,10 @@
   position: $pos;
 }
 
+@mixin transition($curve: $trans-curve, $speed: $trans-speed) {
+  transition: all $trans-speed $trans-curve;
+}
+
 @mixin full-width {
   margin-left: calc(((100vw - 100%) / 2) * -1);
   margin-right: calc(((100vw - 100%) / 2) * -1);

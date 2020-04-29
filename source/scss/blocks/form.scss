@@ -21,10 +21,9 @@
 .form__text {
   margin: 0;
   margin-bottom: 24px;
-  font-weight: normal;
   font-size: 16px;
   line-height: 24px;
-  color: $black;
+  font-weight: 400;
   letter-spacing: 0.4px;
 }
 
@@ -54,7 +53,7 @@
     color: $orange;
   }
 }
-// TODO Разобраться с плейсхолдером
+
 .form__input {
   width: 269px;
   padding: 16px 13px;
@@ -65,24 +64,41 @@
   }
 
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: $black;
   }
 
   &::-moz-placeholder { /* Firefox 19+ */
-    font-weight: normal;
+    font-weight: 400;
     font-size: 14px;
     line-height: 17px;
     color: $black;
   }
+
 }
 
 .form__button {
   margin: 0 auto;
   padding: 17px 20px 18px;
   width: 176px;
+}
+
+.form__error {
+  position: absolute;
+  top: -16px;
+  left: 0;
+  display: none;
+  height: 16px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: $orange;
+
+  &--show {
+    display: block;
+  }
 }
 
 @media (max-width: $desktop) {

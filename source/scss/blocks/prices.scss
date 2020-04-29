@@ -1,17 +1,15 @@
 .prices {
-  padding-top: 119px;
-  padding-bottom: 80px;
+  padding: 119px 0 80px;
+}
 
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
+.prices__container {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .prices__inner {
   padding-top: 110px;
-  width: 288px;
+  width: 24.5922%;
 }
 
 .prices__list {
@@ -20,10 +18,12 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-right: 9.2%;
+  width: 65.8%;
 }
 
 .prices__item {
-  margin-right: 30px;
+  margin-right: 3.8754%;
   margin-bottom: 20px;
 
   &:last-child {
@@ -38,6 +38,7 @@
   font-weight: 600;
   font-size: 55px;
   line-height: 90px;
+  color: $black-alt;
 
   &::before {
     @include pseudo;
@@ -53,7 +54,7 @@
 .prices__text {
   margin: 0;
   margin-bottom: 60px;
-  font-weight: normal;
+  font-weight: 400;
   font-size: 16px;
   line-height: 27px;
   color: rgba($color: $black-alt, $alpha: 0.7)
@@ -73,13 +74,23 @@
 }
 
 .prices__link {
+  @include transition;
+
   position: relative;
-  font-weight: normal;
   font-size: 20px;
   line-height: 32px;
-  text-decoration: none;
-  color: #000000;
   letter-spacing: 0.3px;
+  font-weight: 400;
+  text-decoration: none;
+  color: $default-black;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.5;
+  }
 }
 
 .prices__phone-icon {
@@ -104,6 +115,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin-right: 0;
+    width: 100%;
   }
 
   .prices__inner {

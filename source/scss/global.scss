@@ -45,3 +45,22 @@ img {
   display: block;
   max-width: 100%;
 }
+
+svg {
+  fill: currentColor;
+}
+
+.outlined {
+  &--black {
+    outline: 1px solid black;
+  }
+
+  &--red {
+    outline: 1px solid red;
+  }
+}
+
+// TODO не перелистываются табы на тач
+// TODO перетаскивание табов, поправить
+// TODO валидация формы
+// TODO анимация модалок
