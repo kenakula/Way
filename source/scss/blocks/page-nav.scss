@@ -41,20 +41,21 @@
 
 @media (max-width: $desktop) {
   .page-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
     display: none;
     flex-grow: 1;
     margin: 0;
     padding: 98px 0 50px;
+    max-width: none;
     width: 100%;
+    min-height: 518px;
     background-color: $white;
+    z-index: 150;
 
     &--opened {
-      position: absolute;
-      top: 0;
-      left: 0;
       display: block;
-      min-height: 518px;
-      z-index: 100;
     }
   }
 

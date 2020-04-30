@@ -80,7 +80,7 @@
         </div>
         <ul class="places__list">
           <li class="places__item">
-            <a href="#" class="places__link">
+            <a href="#directions" class="places__link" data-tabindex="0">
               <div class="places__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -96,14 +96,14 @@
                 </picture>
               </div>
               <span class="places__label">Греция</span>
-              <div class="places__hover">
+              <div class="places__hover" data-tabindex="0">
                 <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
           <li class="places__item">
-            <a href="#" class="places__link">
+            <a href="#directions" class="places__link" data-tabindex="1">
               <div class="places__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -120,14 +120,14 @@
                 </picture>
               </div>
               <span class="places__label">Албания</span>
-              <div class="places__hover">
+              <div class="places__hover" data-tabindex="1">
                 <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
           <li class="places__item">
-            <a href="#" class="places__link">
+            <a href="#directions" class="places__link" data-tabindex="2">
               <div class="places__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -144,14 +144,14 @@
                 </picture>
               </div>
               <span class="places__label">Македония</span>
-              <div class="places__hover">
+              <div class="places__hover" data-tabindex="2">
                 <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
           <li class="places__item">
-            <a href="#" class="places__link">
+            <a href="#directions" class="places__link" data-tabindex="3">
               <div class="places__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -168,14 +168,14 @@
                 </picture>
               </div>
               <span class="places__label">Черногория</span>
-              <div class="places__hover">
+              <div class="places__hover" data-tabindex="3">
                 <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
           </li>
 
           <li class="places__item">
-            <a href="#" class="places__link">
+            <a href="#directions" class="places__link" data-tabindex="4">
               <div class="places__img-container">
                 <picture>
                   <source media="(max-width: 1023px)"
@@ -192,7 +192,7 @@
                 </picture>
               </div>
               <span class="places__label">Хорватия</span>
-              <div class="places__hover">
+              <div class="places__hover" data-tabindex="4">
                 <span class="places__button">Смотреть подробнее</span>
               </div>
             </a>
@@ -728,14 +728,16 @@
             height="444" alt="фотография побережья">
         </picture>
       </div>
-      <form class="modal__form" action="#" method="POST">
+      <form class="modal__form form" action="#" method="POST">
         <h2 class="modal__title">Купить тур</h2>
         <div class="modal__inputs">
           <div class="modal__wrapper modal__wrapper--required">
+            <span class="modal__error form__error">Данные не верны</span>
             <input class="modal__input modal__input--tel" type="tel" placeholder="+7 Введите 10 цифр номера" required>
           </div>
           <div class="modal__wrapper">
-            <input class="modal__input" type="email" placeholder="E-mail">
+            <span class="modal__error form__error">Данные не верны</span>
+            <input class="modal__input modal__input--email" type="email" placeholder="E-mail">
           </div>
         </div>
         <button class="button modal__submit" type="submit">Отправить</button>
@@ -752,9 +754,10 @@
     </div>
   </div>
 
+  <script src="js/utilitary.min.js"></script>
   <script src="js/menu.min.js"></script>
-  <script src="js/buy.min.js"></script>
-  <script src="js/form.min.js"></script>
+  <script src="js/buy-modal.min.js"></script>
+  <script src="js/callback-form.min.js"></script>
   <script src="js/tabs-drag.min.js"></script>
   <script src="js/tabs.min.js"></script>
 </body>

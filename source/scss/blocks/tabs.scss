@@ -48,20 +48,17 @@
   .tabs__list {
     position: relative;
     flex-wrap: nowrap;
-    width: 100%;
+    width: 950px;
   }
 
   .tabs__item {
-    margin-right: 14.4641%;
+    margin-right: 11%;
   }
 }
 
 @media (max-width: $tablet) {
-  .tabs {
-    padding-left: 4.687%;
-  }
 
   .tabs__item {
-    margin-right: 35.4641%;
+    margin-right: 11.5%;
   }
 }

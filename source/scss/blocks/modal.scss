@@ -112,6 +112,10 @@
   &::-moz-placeholder { /* Firefox 19+ */
     color: #48494D;
   }
+
+  &--invalid {
+    border-color: $orange;
+  }
 }
 
 .modal__submit {

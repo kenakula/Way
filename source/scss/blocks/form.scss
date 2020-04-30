@@ -77,6 +77,10 @@
     color: $black;
   }
 
+  &--invalid {
+    border-color: $orange;
+  }
+
 }
 
 .form__button {
