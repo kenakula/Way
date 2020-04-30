@@ -40,11 +40,16 @@
   font-size: 14px;
   line-height: 28px;
   letter-spacing: -0.1px;
-  color: rgba($color: $black-alt, $alpha: 0.7)
+  color: rgba($color: $black-alt, $alpha: 0.7);
+}
+
+.feedback__img-container {
+  flex-grow: 1;
 }
 
 .feedback__img {
-  object-fit: contain;
+  object-fit: cover;
+  width: 100%;
 }
 
 .feedback__author {

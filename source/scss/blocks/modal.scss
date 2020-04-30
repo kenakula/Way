@@ -22,7 +22,7 @@
   display: flex;
   max-width: 728px;
   min-height: 444px;
-  background-color: #FBF8F8;
+  background-color: $modal-inner-bg;
 
   &--success {
     padding: 0 140px;
@@ -58,7 +58,7 @@
   font-size: 25px;
   line-height: 43px;
   text-align: center;
-  color: #48494D;
+  color: $mobile-nav-textcolor;
 
   &--success {
     margin: 0;
@@ -67,7 +67,7 @@
     line-height: 43px;
     letter-spacing: 0.5px;
     text-align: center;
-    color: #48494D;
+    color: $mobile-nav-textcolor;
   }
 }
 
@@ -99,18 +99,18 @@
   padding: 16px 13px;
   width: 100%;
   height: 50px;
-  border: 1px solid #D7D9DF;
+  border: 1px solid $footer-border-color;
 
   &--tel {
     padding-left: 26px;
   }
 
   &::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-    color: #48494D;
+    color: $mobile-nav-textcolor;
   }
 
   &::-moz-placeholder { /* Firefox 19+ */
-    color: #48494D;
+    color: $mobile-nav-textcolor;
   }
 
   &--invalid {

@@ -24,6 +24,7 @@
     }
   }
 }
+
 .card__wrapper {
   padding-top: 37px;
 }
@@ -187,6 +188,7 @@
   .card__price {
     margin: 0;
     margin-bottom: 12px;
+    font-size: 25px;
   }
 
   .card__promo {
@@ -196,12 +198,12 @@
   }
 
   .card__list {
-    padding: 24px 20px 0;
+    padding: 24px 22px 0;
   }
 
   .card__item {
     padding-left: 30px;
-    padding-right: 0px;
+    padding-right: 0;
     margin-bottom: 8px;
   }
 

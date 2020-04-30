@@ -53,7 +53,7 @@
 .page-footer__item {
   margin-bottom: 10px;
   font-weight: 400;
-  color: rgba($color: $black, $alpha: 0.5)
+  color: rgba($color: $black, $alpha: 0.5);
 }
 
 .page-footer__text {
@@ -63,7 +63,7 @@
   font-size: 14px;
   line-height: 24px;
   letter-spacing: 0.1px;
-  color: rgba($color: $black, $alpha: 0.5)
+  color: rgba($color: $black, $alpha: 0.5);
 }
 
 @media (max-width: $desktop) {
@@ -80,7 +80,7 @@
     }
 
     &--contacts {
-      padding-left: 50px;
+      padding-left: 57px;
       width: auto;
       border: none;
     }
@@ -88,11 +88,17 @@
     &--group-trips {
       padding-top: 26px;
       width: 100%;
-      border-top: 1px solid #D7D9DF;
+      border-top: 1px solid $footer-border-color;
 
       .page-footer__title {
         text-align: center;
       }
+    }
+  }
+
+  .page-footer__title {
+    &--contacts {
+      margin-bottom: 20px;
     }
   }
 
@@ -130,7 +136,7 @@
   .page-footer__section {
     width: 100%;
     border: none;
-    border-bottom: 1px solid #D7D9DF;
+    border-bottom: 1px solid $footer-border-color;
 
     &--contacts {
       padding: 0;

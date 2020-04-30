@@ -48,7 +48,11 @@
   stroke: $footer-border-color;
 }
 
-@media (max-width: $tablet) {
+@media (max-width: $desktop) {
+  .contacts__item {
+    margin-bottom: 17px;
+  }
+
   .contacts__mail {
     &--link {
       display: none;
@@ -58,7 +62,9 @@
       display: inline;
     }
   }
+}
 
+@media (max-width: $tablet) {
   .contacts__list {
     display: flex;
     flex-direction: column;

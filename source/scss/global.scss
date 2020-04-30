@@ -50,14 +50,4 @@ svg {
   fill: currentColor;
 }
 
-.outlined {
-  &--black {
-    outline: 1px solid black;
-  }
-
-  &--red {
-    outline: 1px solid red;
-  }
-}
-
-// TODO анимация модалок
+// TODO плавная прокрутка к якорю

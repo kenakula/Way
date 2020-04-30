@@ -2,12 +2,13 @@
 $default-black: #000000;
 $white: #ffffff;
 $black: #141517;
-$black-alt: #2C2E3F;
-$orange: #FE7865;
-$orange-hover: #F17D4B;
+$black-alt: #2c2e3f;
+$orange: #fe7865;
+$orange-hover: #f17d4b;
 $promo-bg: #97b4de;
-$mobile-nav-textcolor: #48494D;
-$footer-border-color: #D7D9DF;
+$mobile-nav-textcolor: #48494d;
+$footer-border-color: #d7d9df;
+$modal-inner-bg: #fbf8f8;
 
 // letter-spacing
 
@@ -17,10 +18,8 @@ $trans-speed: 0.2s;
 $trans-curve: ease-in;
 
 // fonts
-$font-main: "Montserrat Regular", Verdana, sans-serif;
-// $font-semibold: "Montserrat Medium", "Arial", sans-serif;
-// $font-bold: "Montserrat Semibold", "Arial", sans-serif;
-$font-alt: "Poppins", Verdana, sans-serif;
+$font-main: "Montserrat Regular", verdana, sans-serif;
+$font-alt: "Poppins", verdana, sans-serif;
 
 // bp
 $mobile: 320px;
