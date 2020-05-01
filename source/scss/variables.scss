@@ -10,16 +10,13 @@ $mobile-nav-textcolor: #48494d;
 $footer-border-color: #d7d9df;
 $modal-inner-bg: #fbf8f8;
 
-// letter-spacing
-
-
 // transition
 $trans-speed: 0.2s;
 $trans-curve: ease-in;
 
 // fonts
-$font-main: "Montserrat Regular", verdana, sans-serif;
-$font-alt: "Poppins", verdana, sans-serif;
+$font-main: "Montserrat Regular", "Verdana", sans-serif;
+$font-alt: "Poppins", "Verdana", sans-serif;
 
 // bp
 $mobile: 320px;

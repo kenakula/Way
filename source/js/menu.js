@@ -5,27 +5,40 @@
   const toggler = header.querySelector('.toggler');
   const menu = header.querySelector('.page-nav');
 
-  if (header.classList.contains('page-header--nojs')) {
-    header.classList.remove('page-header--nojs');
-  }
-
   const toggleTogglerState = () => {
-    toggler.classList.contains('toggler--active') ?
-      toggler.classList.remove('toggler--active') :
+    if (!toggler.classList.contains('toggler--active')) {
       toggler.classList.add('toggler--active');
-  }
+      toggler.setAttribute('aria-expanded', true);
+    } else {
+      toggler.classList.remove('toggler--active');
+      toggler.setAttribute('aria-expanded', false);
+    }
+  };
 
   const toggleMenuState = () => {
     menu.classList.contains('page-nav--opened') ?
       menu.classList.remove('page-nav--opened') :
       menu.classList.add('page-nav--opened');
-  }
+  };
 
-  const onTogglerClickMenuShow = () => {
+  const onTogglerClickMenuToggle = () => {
     toggleTogglerState();
     toggleMenuState();
-  }
+  };
 
-  toggler.addEventListener('click', onTogglerClickMenuShow);
+  const onLinkClickCloseMenu = (evt) => {
+    if (evt.target.classList.contains('page-nav__link')) {
+      onTogglerClickMenuToggle();
+    }
+  };
+
+  toggler.addEventListener('click', onTogglerClickMenuToggle);
+  menu.addEventListener('click', onLinkClickCloseMenu);
+
+
+  // скрывает меню при работающем js
+  if (header.classList.contains('page-header--nojs')) {
+    header.classList.remove('page-header--nojs');
+  }
 
 }

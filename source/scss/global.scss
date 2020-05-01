@@ -39,6 +39,8 @@ body {
   background-repeat: no-repeat;
   background-size: 75.1556%;
   background-position: center 2694px;
+
+  // в макете цвет изображения слишком светлый, совсем не видно на фоне
 }
 
 img {
@@ -50,4 +52,11 @@ svg {
   fill: currentColor;
 }
 
+@media (max-width: $desktop) {
+  body {
+    background-image: none;
+  }
+}
+
 // TODO плавная прокрутка к якорю
+// TODO доступность интерактивных элементов

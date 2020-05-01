@@ -4,12 +4,10 @@
   const ESC_BUTTON = 'Escape';
   const EMAIL_REG = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
-
   // устанавливает дефолтное значение инпута
   const setInputValue = (string, input) => {
     input.value += string;
   };
-
 
   // ------------- localstorage
 

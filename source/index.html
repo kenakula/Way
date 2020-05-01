@@ -20,12 +20,12 @@
 
   <header class="page-header page-header--nojs">
     <div class="page-header__wrapper container">
-      <a class="page-header__logo">
+      <a href="index.html" class="page-header__logo">
         <img class="page-header__logo-img" src="img/page-logo.svg" width="57" height="22" alt="логотип компании">
       </a>
-      <button class="toggler" type="button"></button>
+      <button class="toggler" type="button" aria-expanded="false" aria-controls="menu-list">Меню</button>
       <nav class="page-nav">
-        <ul class="page-nav__list">
+        <ul class="page-nav__list" id="menu-list">
           <li class="page-nav__item">
             <a href="#places" class="page-nav__link">О путешествии</a>
           </li>
@@ -209,28 +209,28 @@
     <!-- DIRECTIONS -->
 
     <section class="directions" id="directions">
-      <h2 class="visually-hidden">Описание направлений туров</h2>
+      <h2 class="visually-hidden" id="directions-header">Описание направлений туров</h2>
 
       <div class="directions__tabs container tabs">
-        <ul class="tabs__list" draggable="true">
+        <ul class="tabs__list" draggable="true" aria-labelledby="directions-header">
           <li class="tabs__item">
-            <a href="#" class="tabs__link tabs__link--active" data-tab="0">Греция</a>
+            <a href="" class="tabs__link tabs__link--active" data-tab="0">Греция</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link" data-tab="1">Албания</a>
+            <a href="" class="tabs__link" data-tab="1">Албания</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link" data-tab="2">Македония</a>
+            <a href="" class="tabs__link" data-tab="2">Македония</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link" data-tab="3">Черногория</a>
+            <a href="" class="tabs__link" data-tab="3">Черногория</a>
           </li>
 
           <li class="tabs__item">
-            <a href="#" class="tabs__link" data-tab="4">Хорватия</a>
+            <a href="" class="tabs__link" data-tab="4">Хорватия</a>
           </li>
         </ul>
       </div>
@@ -249,7 +249,7 @@
                   достигающих в высоту 600 метров, наградой будет неописуемая красота природы и атмосфера, царящая в
                   монастырях Метеоры.
                 </p>
-                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
+                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -305,7 +305,7 @@
                   песок. Однако, присмотревшись, можно понять, что это не песок, а камни, перетёртые до такого мелкого
                   состояния.
                 </p>
-                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
+                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -358,7 +358,7 @@
                   местности возле Охридского озера и Самуиловой твердыни. А также мы заберемся на вершину горы Татичев
                   Камен где находится археологический памятник Кокино в длину около 100 метров.
                 </p>
-                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
+                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -411,7 +411,7 @@
                   Черногория удивит нас самым большим в Европе каньоном реки Тара, который в некоторых местах высотой
                   берегов доходит до 1300 метров, а шириной не превышает трех. При этом длина каньона составляет 80 км.
                 </p>
-                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
+                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -463,7 +463,7 @@
                   метровую глубину через 5 освещенных залов, украшенных удивительными нерукотворными скульптурами —
                   сталактитами и сталагмитами — формировавшимися тысячи и тысячи лет.
                 </p>
-                <a href="#" class="directions__button button button--buy">Купить тур сейчас</a>
+                <button type="button" class="directions__button button button--buy">Купить тур сейчас</button>
               </div>
               <div class="directions__feedback feedback">
                 <div class="feedback__img-container">
@@ -559,7 +559,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="card__button button button--buy">Купить тур сейчас</a>
+            <button type="button" class="card__button button button--buy">Купить тур сейчас</button>
           </li>
 
           <li class="prices__item card card--simple">
@@ -610,7 +610,7 @@
                 </li>
               </ul>
             </div>
-            <a href="#" class="card__button button button--buy">Купить тур сейчас</a>
+            <button type="button" class="card__button button button--buy">Купить тур сейчас</button>
           </li>
         </ul>
 
@@ -773,6 +773,7 @@
 
   <script src="js/utilitary.min.js"></script>
   <script src="js/menu.min.js"></script>
+  <script src="js/smooth-scroll.min.js"></script>
   <script src="js/buy-modal.min.js"></script>
   <script src="js/callback-form.min.js"></script>
   <script src="js/tabs-drag.min.js"></script>

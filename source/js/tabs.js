@@ -44,10 +44,9 @@
 
   // обработчик клика по табу, открывает содержимое таба
   const onLinkClickTabOpen = (evt) => {
+    evt.preventDefault();
     if (evt.target.classList.contains('tabs__link')) {
-      evt.preventDefault();
       let newTabIndex = evt.target.dataset.tab;
-
       changeTab(newTabIndex);
     }
   };
