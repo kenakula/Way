@@ -6,10 +6,15 @@
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
+  background-attachment: fixed;
   color: $white;
 
   @media (min-resolution: $retina) {
     background-image: url("../img/promo-desktop@2x.jpg");
+  }
+
+  @media (max-width: 1023px) {
+    background-attachment: initial;
   }
 }
 
